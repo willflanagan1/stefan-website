@@ -145,12 +145,12 @@
                 elements.forEach((element) => {
                     console.log(element)
                     if ($(element).val() === '') {
-                        filledOut=false;
+                        filledOut = false;
                     }
                 })
-                if(filledOut==true) {
+                if (filledOut == true) {
                     sendMail();
-                }else{
+                } else {
                     alert("Please fill out all fields!")
                 }
             })

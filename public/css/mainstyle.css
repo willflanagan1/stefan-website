@@ -1,13 +1,10 @@
 body {
     background-color: whitesmoke;
-
 }
-
 
 .navbar-item:hover {
     background-color: #e9f5f8 !important;
 }
-
 
 hr {
     width: 100%;

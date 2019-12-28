@@ -5,16 +5,12 @@ body{
     background-color: #e9f5f8 !important;
 }
 
-hr {
-    width: 100%;
-    margin: 4px !important;
-    background-color: darkgray !important;
-}
 .navbar {
     height: 5rem !important;
     font-weight: bold;
     border-bottom: 1px, solid, white;
     background-color: lightslategray !important;
+
 }
 
 .navbar-item {
