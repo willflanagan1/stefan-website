@@ -12,6 +12,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
+
+            //change to your user key on emailJS
             emailjs.init("user_7oeahHoRpef1rauqdyFJs");
         })();
     </script>
@@ -169,6 +171,7 @@
                 "message": message
             }
             console.log(template_params)
+            //change template to tenplate on emailJS
             emailjs.send('default_service', 'template_AEqWNNbA', template_params);
             $("#first-name").val('');
             $("#last-name").val('');

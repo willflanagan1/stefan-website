@@ -1,5 +1,13 @@
+##Step 1
+
+Clone repository and run `npm install` in root directory
+
+##Step 2
+
+Make an account on emailJS and put in your user key and email template to the contacts.html
+
+##Step 3
+
+Host website using your own firebase account
 
 
-
-# Internship-Website
-I used my skills in HTML and CSS to create this initial iteration. Once I develop my skills in Javascript, I will update the page. 
