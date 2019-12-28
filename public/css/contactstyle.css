@@ -1,0 +1,91 @@
+.navbar-item:hover{
+    background-color: #e9f5f8 !important;
+}
+#nav-hr{
+    margin-top: 0 !important;
+    margin-left: -30px !important;
+    width: 120%;
+    margin-bottom: -20px !important ;
+    height: 5px;
+}
+
+hr{
+    width: 110%;
+    background-color: darkgray !important;
+}
+.navbar {
+    height: 5rem !important;
+    font-weight: bold;
+    border-bottom: 1px, solid, white;
+    background-color: lightslategray !important;
+}
+
+.navbar-item{
+    color: #363636 !important;
+}
+#bme{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#bmeimg {
+    max-height: none !important;
+}
+
+#navbar-brand{
+    margin-left:10px ;
+}
+
+#navbar-end {
+    margin-right: 10px;
+}
+
+.tile{
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 240px;
+    width: 30%;
+    background-color: #e9f5f8;
+}
+
+#contact-form{
+    margin-left: -450px;
+    margin-right: -100px;
+}
+
+.card{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #e9f5f8 !important;
+}
+.level{
+    margin-top: 20px !important;
+    width: 550px;
+    margin-left: 380px;
+}
+
+.level-item{
+    margin-left: 60px;
+}
+
+.heading{
+    font-size: 13px !important;
+}
+
+.header {
+    font-size: 25px !important;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 17px !important;
+}
+
+#linked-in{
+    margin-bottom: 10px;
+    font-size: 20px !important;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_7oeahHoRpef1rauqdyFJs");
+        })();
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div id="navbar-brand" class="navbar-brand">
+            <a id="bme" class="navbar-item" href="index.html">
+                <img id="bmeimg" src="images/bme.png" width="86px" height="56px" />
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    About Me
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="projects.html">
+                    Projects
+                </a>
+                <a id="navbar-end" class="navbar-item" href="contacts.html">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </nav>
+    <hr id="nav-hr">
+    <div class="card">
+        <div class="tile is-3 ">
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    <article>
+                        <form id="contact-form">
+                            <p style="text-align: center; margin-top: -20px" class="header is-3"><span>Contact Me</span>
+                            </p>
+                            <div class="field">
+                                <label class="label">First Name</label>
+                                <div class="control">
+                                    <input id="first-name" class="input" type="text" placeholder="First Name"
+                                        required="true">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Last Name</label>
+                                <div class="control">
+                                    <input id="last-name" class="input" type="text" placeholder="Last Name"
+                                        required="true">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <input id="email" class="input" type="email" name="email" required="true">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Subject</label>
+                                <div class="control">
+                                    <textarea rows="1" id="subject" name="message" class="textarea"
+                                        placeholder="Subject" required="true"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea rows=3 id="message" name="message" class="textarea" placeholder="Message"
+                                        required="true"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type="button" id="submit" class="button is-link is-small">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button type="reset" value="Clear"
+                                        class="button is-link is-light is-small">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="level">
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Email</p>
+                <p class="title">slehman@live.unc.edu</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Phone Number</p>
+                <p class="title">1-(301)-787-2268</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p id="linked-in" class="title"><a href="https://www.linkedin.com/in/stefan-lehman-04a97b162/">My
+                        LinkedIn</a></p>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var elements = document.querySelectorAll("input[required], textarea[required]");
+            var filledOut = true;
+            $('#submit').click(function () {
+                elements.forEach((element) => {
+                    console.log(element)
+                    if ($(element).val() === '') {
+                        filledOut=false;
+                    }
+                })
+                if(filledOut==true) {
+                    sendMail();
+                }else{
+                    alert("Please fill out all fields!")
+                }
+            })
+        })
+
+        function sendMail() {
+            var senderFirst = $("#first-name").val();
+            var senderLast = $("#last-name").val();
+            var email = $("#email").val();
+            var subject = $("#subject").val();
+            var message = $("#message").val();
+            var template_params = {
+                "from_name": senderFirst + ' ' + senderLast,
+                "reply_to": email,
+                "subject": subject,
+                "message": message
+            }
+            console.log(template_params)
+            emailjs.send('default_service', 'template_AEqWNNbA', template_params);
+            $("#first-name").val('');
+            $("#last-name").val('');
+            $("#email").val('');
+            $("#subject").val('');
+            $("#message").val('');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+body{
+    max-height: 1000px;
+}
+.navbar-item:hover {
+    background-color: #e9f5f8 !important;
+}
+
+hr {
+    width: 100%;
+    margin: 4px !important;
+    background-color: darkgray !important;
+}
+.navbar {
+    height: 5rem !important;
+    font-weight: bold;
+    border-bottom: 1px, solid, white;
+    background-color: lightslategray !important;
+}
+
+.navbar-item {
+    color: #363636 !important;
+}
+#bme {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#bmeimg {
+    max-height: none !important;
+}
+
+#navbar-brand {
+    margin-left: 10px;
+}
+
+#navbar-end {
+    margin-right: 10px;
+}
+
+hr {
+    width: 100%;
+    margin: 4px !important;
+    background-color: darkgray !important;
+}
+
+#nav-hr {
+    margin-top: 0 !important;
+    margin-left: -30px !important;
+    width: 120%;
+    margin-bottom: -20px !important;
+    height: 5px;
+}
+.title {
+    margin-bottom: .6rem !important;
+    margin-top: -5px!important;
+}
+
+.subtitle.is-7 {
+    margin-top: .7rem !important;
+    margin-right: -8px !important;
+}
+#my-image-container {
+    text-align: center;
+}
+
+.my-image {
+    max-width: 120% !important;
+    max-height: 300px;
+    float: left;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding-left: 17px;
+    padding-bottom: 30px;
+    background-color: #e9f5f8 !important;
+    width: 1200px;
+    height: 500px;
+}
+#project-one {
+    margin-top: -30px !important;
+    margin-bottom: 1rem !important;
+}
+
+.in-image {
+    border: 4px double #363636;
+    border-radius: 24px;
+    margin: 7px;
+}
+
+.in-image:hover {
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    margin-bottom: 1rem !important;
+}
+
+.slick-arrow:before {
+    color: black !important;
+}
+
+.my-modal {
+    display: none;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div id="navbar-brand" class="navbar-brand">
+            <a id="bme" class="navbar-item" href="index.html">
+                <img id="bmeimg" src="/images/bme.png" width="86px" height="56px" />
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    About Me
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="projects.html">
+                    Projects
+                </a>
+                <a id="navbar-end" class="navbar-item" href="contacts.html">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </nav>
+    <hr id="nav-hr">
+    <div class="columns">
+        <div class="column is-three-fifths">
+            <div class="name-card">
+                <div class="card">
+                    <br></br>
+                    <p id="name" class="title is-3">Stefan Lehman</p>
+                    <div class="card-image">
+                        <figure id="my-image-container">
+                            <img id="my-image" class="is-square" src="/images/download.png">
+                        </figure>
+                    </div>
+                    <div class="card-content tile is-parent is-vertical">
+                        <article id="card-rows" class="tile is-child-box">
+                            <p class="column in-image">
+                                I am an undergraduate student at the University of North Carolina - Chapel Hill. I am
+                                pursuing a degree in Biomedical Engineering and a minor in Chemistry.
+                            </p>
+                        </article>
+                        <article id="card-rows" class="tile is-child-box">
+                            <p class="column in-image">
+                                I am interested in finding an internship for Summer 2020. I would like to apply my
+                                skills in
+                                STEM, Engineering, or programming to an experience over my break.
+                            </p>
+                        </article>
+                        <article id="card-rows" class="tile is-child-box">
+                            <p class="column in-image">
+                                I am both an American and Dutch citizen. As a result, I can work in either Europe or the
+                                US.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="volunteer-card">
+                <div class="card">
+                    <div class="tile is-parent">
+                        <article id="card-rows" class="tile is-child-box">
+                            <div class="table-container">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Dates</th>
+                                            <th>Position</th>
+                                            <th>Volunteer Experience</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                July 2019 - Present
+                                            </td>
+                                            <td>
+                                                Emergency Department Volunteer
+                                            </td>
+                                            <td>
+                                                George Washington University Hospital  <div class="info"><i class="fas fa-info-circle"></i><span class="tool-tip-text">(202) 715-4000</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                June 2018 - August 2018
+                                            </td>
+                                            <td>
+                                                Summer Volunteer Intern
+                                            </td>
+                                            <td>
+                                                Pivot Physical Therapy  <div class="info"> <i class="fas fa-info-circle"></i><span class="tool-tip-text">(301) 564-4040</span></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-two-fifths">
+            <div id="right-column">
+                <div id="skills-card" class="card">
+                    <div class="card-content">
+                        <p id="skills-title" class="subtitle is-3">Skills</p>
+                        <div id="skills" class="content columns">
+                            <ul class="column" style="list-style-type: none">
+                                <li>Additive Manufacturing ⭐⭐⭐⭐⭐</li>
+                                <li>Arduino ⭐⭐⭐☆☆</li>
+                                <li>CSS ⭐⭐⭐☆☆</li>
+                                <li>Graphiz ⭐⭐⭐⭐☆</li>
+                                <li>HTML ⭐⭐⭐☆☆</li>
+                            </ul>
+                            <ul class="column" style="list-style-type: none">
+                                <li>Matlab ⭐⭐⭐⭐☆</li>
+                                <li>Python ⭐⭐☆☆☆</li>
+                                <li>Solidworks ⭐⭐⭐⭐⭐</li>
+                                <li>SQL ⭐⭐⭐☆☆</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-lower column">
+                <div id="experiences-card" class="card">
+                    <p id="experiences-title" class="subtitle is-3">Experiences</p>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child experience">
+                                <p class="title is-6">Innovation Assistant at the North Carolina Translational and
+                                    Clinical
+                                    Science Institute </p>
+                                <hr>
+                                <p class="subtitle is-7">
+                                    I am applying skills in SQL, HTML, and CSS to construct a database for the
+                                    instituteI
+                                    conducted research on Saphenous Vein Stripping to develop a more efficient medical
+                                    device
+                                    for the surgery.
+                                    I also programmed Graphviz to create a heat map for my supervisors to track the
+                                    institute's
+                                    investments
+                                    in the UNC Hospital. I interact with clients to improve their experience in working
+                                    with
+                                    the
+                                    institute.
+                                </p>
+                            </article>
+                            <article class="tile is-child experience">
+                                <p class="title is-6">Undergraduate Consultant at UNC Motion Science Institute
+                                    <hr>
+                                    <p class="subtitle is-7">
+                                        I am assisting in the development of a medical device that provides vibrational
+                                        feedback
+                                        to correct
+                                        a patient’s gait. I use Solidworks
+                                        and 3D printing to design and manufacture the exterior casing of the device.
+                                        Consult my
+                                        supervisor on plausible designs that
+                                        incorporate the electronics into a wearable product
+                                    </p>
+                            </article>
+                            <article class="tile is-child experience">
+                                <p class="title is-6">Undergraduate Research Assistant at Margolis Labs
+                                    <hr>
+                                    <p class="subtitle is-7">
+                                        I conducted CD4+ white blood cell isolation, RNA extraction, and cultivation of
+                                        cells
+                                        with IL-2
+                                        media. I Built and maintained
+                                        the lab’s data base detailing the location of BSL2/2+ HIVfreezer samples.
+                                    </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
